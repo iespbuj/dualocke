@@ -22,6 +22,7 @@
       padding: 20px;
       position: relative;
       overflow-x: hidden;
+      font-size: 18px;
     }
 
     body::before, body::after {
@@ -43,19 +44,15 @@
       z-index: 0;
     }
 
-    body::before {
-      left: 0;
-    }
-
-    body::after {
-      right: 0;
-    }
+    body::before { left: 0; }
+    body::after { right: 0; }
 
     h1 {
       margin-bottom: 20px;
       text-shadow: 0 0 10px #fff;
       z-index: 1;
       position: relative;
+      font-size: 2.5em;
     }
 
     table {
@@ -71,8 +68,8 @@
     }
 
     th, td {
-      padding: 10px;
-      font-size: 1.1em;
+      padding: 12px;
+      font-size: 1.3em;
       font-weight: bold;
       vertical-align: middle;
       user-select: none;
@@ -84,8 +81,8 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      font-size: 1.4em;
-      gap: 4px;
+      font-size: 1.8em;
+      gap: 5px;
       text-shadow: 0 0 5px #ffb3b3;
       animation: heartbeat 1.5s infinite;
       cursor: pointer;
@@ -121,7 +118,7 @@
     .alerta {
       color: #ff4d4d;
       font-weight: bold;
-      font-size: 1em;
+      font-size: 1.2em;
       margin-top: 10px;
     }
   </style>
@@ -129,7 +126,7 @@
 <body>
   <h1>Vidas Dualocke</h1>
   <table id="vidasTable" aria-label="Tabla de vidas de Dualocke"></table>
-  
+
   <script>
   const csvUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTcmHOaXqAYR1tO1dJIXyk5SgiRCKO2XhyOgfpKErifKlD9yn2cdLEurYc6RovnGwOG9rRZSR4Cx0tI/pub?output=csv';
 
